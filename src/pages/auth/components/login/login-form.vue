@@ -17,7 +17,11 @@
         >
         </t-input>
         <div class="row justify-end">
-          <q-btn flat color="primary" class="align-end"
+          <q-btn
+            :to="{ name: ROUTE_NAMES.AUTH_ROUTE_NAMES.FORGOT_PASSWORD }"
+            flat
+            color="primary"
+            class="align-end"
             >I forgot password</q-btn
           >
         </div>
@@ -75,7 +79,7 @@ const form = reactive({
   &__card {
     min-width: 300px;
     max-width: calc(100vw - 48px);
-    width: 380px;
+    width: 420px;
   }
 }
 </style>

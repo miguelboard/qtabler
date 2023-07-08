@@ -1,7 +1,7 @@
 <template>
-  <div class="login-form column justify-center items-center">
+  <div class="register-form column justify-center items-center">
     <t-logo></t-logo>
-    <q-card flat bordered class="login-form__card q-pa-md rounded-default">
+    <q-card flat bordered class="register-form__card q-pa-md rounded-default">
       <q-card-section class="q-py-md">
         <h6 class="text-h6 q-ma-none text-center text-weight-bold">
           Create new account
@@ -83,11 +83,11 @@ const form = reactive({
 </script>
 
 <style lang="scss">
-.login-form {
+.register-form {
   &__card {
     min-width: 300px;
     max-width: calc(100vw - 48px);
-    width: 380px;
+    width: 420px;
   }
 }
 </style>
