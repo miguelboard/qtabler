@@ -1,6 +1,6 @@
 <template>
   <div class="register-form column justify-center items-center">
-    <t-logo></t-logo>
+    <t-logo class="q-mb-lg"></t-logo>
     <q-card flat bordered class="register-form__card q-pa-md rounded-default">
       <q-card-section class="q-py-md">
         <h6 class="text-h6 q-ma-none text-center text-weight-bold">
