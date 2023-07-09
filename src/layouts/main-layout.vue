@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lFf" class="font-titillium text-default">
     <the-header />
 
     <q-page-container>
