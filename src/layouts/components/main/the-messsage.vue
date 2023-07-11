@@ -3,12 +3,12 @@
     <t-icon
       outline-size="40px"
       inline-size="32px"
-      size="24px"
-      name="o_notifications"
+      size="20px"
+      name="sym_o_forum"
     ></t-icon>
   </q-btn>
   <q-drawer
-    v-model="notificationDrawerState"
+    v-model="messageDrawerState"
     side="right"
     bordered
     overlay
@@ -17,16 +17,21 @@
   >
     <div class="q-px-md q-pt-md border-bottom">
       <div class="row justify-end items-center">
-        <strong class="text-h6 q-my-none">Notification</strong>
+        <strong class="text-h6 q-my-none">Chat</strong>
         <q-space></q-space>
         <q-btn outline flat size="md" color="primary">Mark all as read</q-btn>
       </div>
-      <q-tabs class="text-normal text-disable" model-value="all">
+      <q-tabs class="text-normal text-disable" model-value="all" :shrink="true">
         <q-tab name="all" label="All" class="text-normal text-weight-thin" />
         <q-tab name="read" label="Read" class="text-normal text-weight-thin" />
         <q-tab
           name="unread"
           label="Unread"
+          class="text-normal text-weight-thin"
+        />
+        <q-tab
+          name="peding"
+          label="New messsage request"
           class="text-normal text-weight-thin"
         />
       </q-tabs>
@@ -44,14 +49,13 @@
               outline-size="36px"
               inline-size="28px"
               size="16px"
-              name="sym_o_adjust"
+              name="sym_o_person"
             ></t-icon>
           </q-item-section>
           <q-item-section>
-            <q-item-label>Single line item</q-item-label>
+            <q-item-label>Miguel DePaul</q-item-label>
             <q-item-label caption lines="2" class="text-disable"
-              >Secondary line text. Lorem ipsum dolor sit amet, consectetur
-              adipiscit elit.</q-item-label
+              >Hey Miguel , Can we talk about next project.</q-item-label
             >
           </q-item-section>
 
@@ -67,10 +71,10 @@
 import { ref } from 'vue';
 
 // data
-const notificationDrawerState = ref(false);
+const messageDrawerState = ref(false);
 
 // methods
 function onToggleDrawer() {
-  notificationDrawerState.value = !notificationDrawerState.value;
+  messageDrawerState.value = !messageDrawerState.value;
 }
 </script>
