@@ -12,7 +12,7 @@
     side="right"
     bordered
     overlay
-    :width="400"
+    :width="360"
     :breakpoint="700"
   >
     <div class="q-px-md q-pt-md border-bottom">
