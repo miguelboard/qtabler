@@ -65,7 +65,7 @@
 
 <script lang="ts" setup>
 import { reactive } from 'vue';
-import { ROUTE_NAMES } from 'src/router/routes';
+import { ROUTE_NAMES } from 'src/core/router/routes';
 
 const form = reactive({
   email: '',

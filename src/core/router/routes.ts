@@ -1,17 +1,20 @@
 import { RouteRecordRaw } from 'vue-router';
 import { AUTH_ROUTE_NAMES, authRoutes } from 'src/pages/auth/router';
+import MailLayout from 'src/layouts/main-layout.vue';
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('layouts/main-layout.vue'),
-    children: [{ path: '', component: () => import('pages/index-page.vue') }],
+    component: MailLayout,
+    children: [
+      { path: '', component: () => import('src/pages/index-page.vue') },
+    ],
   },
   ...authRoutes,
   // Always leave this as last one,
   // but you can also remove it
   {
     path: '/:catchAll(.*)*',
-    component: () => import('pages/error/not-found.vue'),
+    component: () => import('src/pages/error/not-found.vue'),
   },
 ];
 

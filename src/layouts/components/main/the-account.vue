@@ -33,7 +33,7 @@
   </q-btn>
 </template>
 <script lang="ts" setup>
-import { ROUTE_NAMES } from 'src/router/routes';
+import { ROUTE_NAMES } from 'src/core/router/routes';
 import { computed } from 'vue';
 
 const accountMenus = computed(() => {

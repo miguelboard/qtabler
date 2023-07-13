@@ -7,15 +7,17 @@
 </template>
 <script lang="ts" setup>
 withDefaults(
-  defineProps<{
-    outlineSize: string | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-    inlineSize: string | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-    size: string | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-    name: string;
-    outlineColor: string;
-    inlineColor: string;
-    color: string;
-  }>(),
+  defineProps<
+    Partial<{
+      outlineSize: string | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+      inlineSize: string | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+      size: string | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+      name: string;
+      outlineColor: string;
+      inlineColor: string;
+      color: string;
+    }>
+  >(),
   {
     outlineColor: 'grey-1',
     inlineColor: 'grey-3',
