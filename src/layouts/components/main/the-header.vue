@@ -1,7 +1,7 @@
 <template>
   <q-header>
     <q-toolbar class="bg-white text-dark border-bottom">
-      <t-logo size="md" class="q-mb-none" />
+      <t-logo size="md" class="q-mb-none" to="/" />
       <q-space></q-space>
       <the-messsage></the-messsage>
       <the-notification></the-notification>
