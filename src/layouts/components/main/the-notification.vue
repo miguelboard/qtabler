@@ -17,7 +17,7 @@
   >
     <div class="q-px-md q-pt-md border-bottom">
       <div class="row justify-end items-center">
-        <strong class="text-h6 q-my-none">Notification</strong>
+        <strong class="text-h6 q-my-none text-weight-bold">Notification</strong>
         <q-space></q-space>
         <q-btn outline flat size="md" color="primary">Mark all as read</q-btn>
       </div>

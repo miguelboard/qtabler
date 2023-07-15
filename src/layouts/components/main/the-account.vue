@@ -47,7 +47,7 @@ const accountMenus = computed(() => {
     {
       name: 'Profile',
       icon: 'sym_o_admin_panel_settings',
-      to: '',
+      to: { name: ROUTE_NAMES.PROFILE_ROUTE_NAMES.PROFILE_GENERAL },
       separator: false,
     },
     {
@@ -59,7 +59,7 @@ const accountMenus = computed(() => {
     {
       name: 'Setting',
       icon: 'sym_o_settings',
-      to: '',
+      to: { name: ROUTE_NAMES.PROFILE_ROUTE_NAMES.PROFILE_SETTINGS },
       separator: false,
     },
     {

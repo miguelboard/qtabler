@@ -19,8 +19,8 @@ import { RouteLocationRaw } from 'vue-router';
 
 const props = withDefaults(
   defineProps<{
-    to: RouteLocationRaw;
-    size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+    to?: RouteLocationRaw;
+    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   }>(),
   {
     to: '/',

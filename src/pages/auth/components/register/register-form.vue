@@ -1,6 +1,6 @@
 <template>
   <div class="register-form column justify-center items-center">
-    <t-logo class="q-mb-lg"></t-logo>
+    <t-logo class="q-mb-lg" to="/"></t-logo>
     <q-card flat bordered class="register-form__card q-pa-md rounded-default">
       <q-card-section class="q-py-md">
         <h6 class="text-h6 q-ma-none text-center text-weight-bold">
@@ -47,7 +47,7 @@
       <q-card-actions class="q-pa-md column justify-start items-stretch">
         <q-btn unelevated color="primary">Register</q-btn>
         <q-separator class="q-my-md">Or</q-separator>
-        <div class="flex justify-between items-center q-gutter-x-sm">
+        <div class="flex justify-between items-center q-gutter-sm">
           <q-btn outline disabled class="flex-grow text-disable"
             >Register with Github</q-btn
           >
