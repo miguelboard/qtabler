@@ -1,6 +1,6 @@
 <template>
   <div class="forgot-password-form column justify-center items-center">
-    <t-logo class="q-mb-lg"></t-logo>
+    <t-logo class="q-mb-lg" to="/"></t-logo>
     <q-card
       flat
       bordered

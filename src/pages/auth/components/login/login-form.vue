@@ -1,6 +1,6 @@
 <template>
   <div class="login-form column justify-center items-center">
-    <t-logo class="q-mb-lg"></t-logo>
+    <t-logo class="q-mb-lg" to="/"></t-logo>
     <q-card flat bordered class="login-form__card q-pa-md rounded-default">
       <q-card-section class="q-py-md">
         <h6 class="text-h6 q-ma-none text-center text-weight-bold">
