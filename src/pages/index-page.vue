@@ -1,6 +1,6 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    <t-window
+  <q-page class="row items-center justify-evenly q-pa-lg">
+    <!-- <t-window
       name="window_panel"
       title="Hello"
       sub-title="Welcome to window feature!"
@@ -29,9 +29,18 @@
         <q-space></q-space>
         <q-btn unelevated color="primary" class="q-px-lg">Save</q-btn>
       </template>
-    </t-window>
+    </t-window> -->
+    <t-schedule style="width: 600px" v-model="dateTime"> </t-schedule>
   </q-page>
 </template>
+<script lang="ts" setup>
+import { reactive } from 'vue';
+
+const dateTime = reactive({
+  date: new Date().toDateString(),
+  time: '00:00',
+});
+</script>
 <style lang="scss" setup>
 .window_panel {
   min-width: 500px;
